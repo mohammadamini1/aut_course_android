@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Tamrin4.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Tamrin4.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <include layout="@layout/content_main" />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="@dimen/fab_margin"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        >
+
+        <!--        row 0  : ir   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/ir"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/irPrice"
+                />
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:id="@+id/irInput"
+                />
+
+
+
+        </LinearLayout>
+
+        <!--        row 1  : us   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/us"
+                ></ImageView>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/usPrice"
+                ></TextView>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:id="@+id/usInput"
+                ></EditText>
+        </LinearLayout>
+
+        <!--        row 2  : ca   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/ca"
+                ></ImageView>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/caPrice"
+                ></TextView>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:id="@+id/caInput"
+                ></EditText>
+        </LinearLayout>
+
+        <!--        row 3  : uk   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/uk"
+                ></ImageView>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/ukPrice"
+                ></TextView>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:id="@+id/ukInput"
+                ></EditText>
+
+
+
+        </LinearLayout>
+
+        <!--        row 4  : eu   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/eu"
+                ></ImageView>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/euPrice"
+                ></TextView>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:id="@+id/euInput"
+                ></EditText>
+
+
+
+        </LinearLayout>
+
+        <!--        row 5  : em   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/em"
+                ></ImageView>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/emPrice"
+                ></TextView>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="1dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:id="@+id/emInput"
+                ></EditText>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
